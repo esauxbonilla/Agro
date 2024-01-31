@@ -5,7 +5,9 @@ namespace Agro.web.Data.Entities
     public class City
     {
         //Creado por AEFB
+        //Code first, primero código clases después la DB. 
         public int Id { get; set; }
+
         [Required(ErrorMessage = "El campo {0} es obligatorio")]
         [Display(Name = "Ciudad")]
         [MaxLength(100, ErrorMessage = "El campo {0} no puede tener más de {1} caracteres")]
